@@ -4,7 +4,7 @@ class Leash extends PetProduct
 {
     function __construct(
         protected string $name,
-        protected int $price,
+        protected float $price,
         protected string $category,
         protected string $size, //small, medium, large
         private string $color,
