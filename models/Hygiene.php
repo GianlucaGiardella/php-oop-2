@@ -1,14 +1,17 @@
 <?php
-
+include_once __DIR__ . "/PetProduct.php";
 class Health extends PetProduct
 {
     function __construct(
-        protected string $name,
-        protected float $price,
-        protected string $category,
+        int $id,
+        string $name,
+        string $img,
+        int $price,
+        string $category,
         private string $size, //small, medium, large
         private string $color,
         private string $material
     ) {
+        parent::__construct($id, $name, $img, $price, $category);
     }
 }
