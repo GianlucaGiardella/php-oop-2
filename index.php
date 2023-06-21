@@ -26,12 +26,13 @@ include_once __DIR__ . "/db.php";
     <div class="container">
         <h2>Prodotti per animali</h2>
         <hr>
-        <?php
-        foreach ($products as $product) { ?>
-        <ul>
-        </ul>
+        <div class="row row-cols-4 g-5">
+            <?php
+            foreach ($products as $product) {
+                echo $product->showProduct();
+            } ?>
+        </div>
         <hr>
-        <?php } ?>
     </div>
 </body>
 
